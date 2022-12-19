@@ -20,7 +20,10 @@ app.use(express.static('public'));
 
 mongoose.set('strictQuery', false);
 
-mongoose.connect('mongodb://localhost:27017/blogDB', { useNewUrlParser: true });
+mongoose.connect(
+  'mongodb+srv://khaleel:yBgSrZuPONRJ3ptC@cluster0.hetxgtr.mongodb.net/blogDB',
+  { useNewUrlParser: true }
+);
 
 const postSchema = {
   title: String,
